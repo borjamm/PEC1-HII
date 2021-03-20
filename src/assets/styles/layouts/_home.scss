@@ -1,28 +1,133 @@
-body {
+// body {
+//   margin: 0;
+//   padding: 30px;
+//   font-family: $font-family-sans-serif;
+//   background-color: $uoc-bg;
+//   color: $uoc-corporate;
+// }
+
+// .uoc-logo {
+//   display: block;
+//   margin-bottom: 20px;
+//   width: 300px;
+//   height: auto;
+// }
+
+// .uoc-title {
+//   font-family: $font-family-serif;
+//   font-size: 36px;
+//   font-weight: 700;
+//   color: $uoc-corporate;
+// }
+
+* {
   margin: 0;
-  padding: 30px;
-  font-family: $font-family-sans-serif;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.uoc-logo {
-  display: block;
-  margin-bottom: 20px;
-  width: 300px;
-  height: auto;
+html {
+  scroll-behavior: smooth;
 }
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 36px;
-  font-weight: 700;
-  color: $uoc-corporate;
-}
+.container {
+  font-family: $font-family-poppins;
 
-footer {
-  p {
-    text-transform: uppercase;
-    text-align: center;
+  .section {
+    min-height: 80vh;
+
+    &.section--flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &.section--background {
+      background: #c2e9fb;
+    }
+
+    .section__author {
+      text-align: center;
+    }
+
+    .section__title {
+      // Puede ser un bloque?
+      text-align: center;
+      position: relative;
+      margin: 2rem 0;
+      padding-bottom: 1rem;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        margin-left: -35px;
+        bottom: 0;
+        width: 70px;
+        border-radius: 150px;
+        border-bottom-width: 5px;
+        border-bottom-style: solid;
+      }
+
+      &.section__title--primary:after {
+        border-bottom-color: #3498db;
+      }
+
+      &.section__title--success:after {
+        border-bottom-color: #90ee90;
+      }
+    }
+
+    .section__container {
+      margin: 3rem;
+      border: 2px solid lightcoral;
+      display: flex;
+      min-height: 50vh;
+
+      .section__img {
+        flex-basis: 38%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        border: 2px solid red;
+
+        .section__icon {
+          margin-top: 2rem;
+          font-size: 100px;
+        }
+      }
+
+      .section__description {
+        padding: 2rem;
+
+        .button {
+          // Editar el botón!
+          margin: 0.3rem 0.3rem 1rem 0;
+          letter-spacing: 1px;
+          padding: 1rem 3rem;
+          font-family: inherit;
+          color: #3498db;
+          border-radius: 35px;
+          border: 2px solid #3498db;
+          cursor: pointer;
+          text-transform: uppercase;
+          outline: none;
+          text-align: center;
+          background-color: rgba(99, 122, 138, 0.15);
+          transition: background-color 0.5s;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        .button:hover {
+          background-color: #3498db;
+          color: #000000;
+          font-weight: bold;
+        }
+      }
+    }
   }
 }

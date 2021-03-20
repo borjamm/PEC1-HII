@@ -1,24 +1,230 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <img src="./assets/images/logo.png" alt="Universitat Oberta de Catalunya" class="uoc-logo">
-    <h1 class="uoc-title">Hello, UOC! <i class="fas fa-university"></i></h1>
-    <p>
-      This is a starter template for the Advanced HTML and CSS Tools courses
-      from the Master's Program in Multimedia Applications and the Master's
-      Program in Web App and Website Development at the Universitat Oberta de
-      Catalunya.
-    </p>
-    <footer>
-      <p>&copy; Borja Machín Morera</p>
-    </footer>
-    <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <!-- do not remove this line! -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Poppins&display=swap"
+            rel="stylesheet"
+        />
+        <title>BMM</title>
+    </head>
+    <body class="container">
+        <header id="index" class="header">
+            <h1 class="header__title">BMM</h1>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#index">Inicio</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#about_me"
+                            >Sobre Mí</a
+                        >
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#skills"
+                            >Habilidades</a
+                        >
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#services"
+                            >Servicios</a
+                        >
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#projects"
+                            >Proyectos</a
+                        >
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-container">
+            <section class="section section--flex section--background">
+                <h2 class="section__author">Borja Machín Morera</h2>
+                <p class="section__text">Frontend developer</p>
+            </section>
+
+            <section class="section">
+                <h2
+                    id="about_me"
+                    class="section__title section__title--primary"
+                >
+                    Sobre mí
+                </h2>
+
+                <div class="section__container">
+                    <!-- <img class="section__img" src="/" alt=""> -->
+
+                    <div class="section__img">
+                        <i class="section__icon fas fa-user"></i>
+                    </div>
+
+                    <div class="section__description">
+                        <p class="section__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sint, eveniet eaque praesentium odio tempora
+                            a, magni facere quas velit quisquam vitae unde,
+                            dicta harum sapiente porro ipsum nemo dolorem ab.
+                        </p>
+
+                        <p class="section__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Quasi distinctio quidem rerum excepturi,
+                            provident reprehenderit quo quis laborum voluptatum
+                            dolores nisi blanditiis eaque culpa. Accusantium
+                            aperiam porro officia saepe quaerat!
+                        </p>
+
+                        <a class="button" href="" role="button">
+                            <span class="button__text">Contacto</span>
+                            <i class="button__icon fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 id="skills" class="section__title section__title--success">
+                    Habilidades
+                </h2>
+                <div class="section__container">
+                    <div class="card">
+                        <h3 class="card__title"></h3>
+                        <ul class="card__list">
+                            <li class="card__item"></li>
+                            <li class="car__item"></li>
+                            <li class="card__item"></li>
+                            <li class="card__item"></li>
+                            <li class="card__item"></li>
+                            <li class="card__item"></li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="card__title"></h3>
+                        <ul class="card__list">
+                            <li class="card__item"></li>
+                            <li class="car__item"></li>
+                            <li class="card__item"></li>
+                            <li class="card__item"></li>
+                            <li class="card__item"></li>
+                            <li class="card__item"></li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="card__title"></h3>
+                        <ul class="card__list">
+                            <li class="card__item"></li>
+                            <li class="car__item"></li>
+                            <li class="card__item"></li>
+                            <li class="card__item"></li>
+                            <li class="card__item"></li>
+                            <li class="card__item"></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 id="services" class="section__title">Servicios</h2>
+
+                <ul class="card-service">
+                    <li class="card-service__item">
+                        <!-- <img class="card-service__img" src="" alt=""> -->
+                        <h3 class="card-service__title"></h3>
+                        <p class="card-service__text"></p>
+                    </li>
+
+                    <li class="card-service__item">
+                        <!-- <img class="card-service__img" src="" alt=""> -->
+                        <h3 class="card-service__title"></h3>
+                        <p class="card-service__text"></p>
+                    </li>
+
+                    <li class="card-service__item">
+                        <!-- <img class="card-service__img" src="" alt=""> -->
+                        <h3 class="card-service__title"></h3>
+                        <p class="card-service__text"></p>
+                    </li>
+
+                    <li class="card-service__item">
+                        <!-- <img class="card-service__img" src="" alt=""> -->
+                        <h3 class="card-service__title"></h3>
+                        <p class="card-service__text"></p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2 id="projects" class="section__title">Proyectos</h2>
+
+                <div class="card">
+                    <h3 class="card__title"></h3>
+                    <ul class="card__list">
+                        <li class="card__item"></li>
+                        <li class="card__item"></li>
+                        <li class="card__item"></li>
+                        <li class="card__item"></li>
+                        <li class="card__item"></li>
+                        <li class="card__item"></li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3 class="card__title"></h3>
+                    <ul class="card__list">
+                        <li class="card__item"></li>
+                        <li class="card__item"></li>
+                        <li class="card__item"></li>
+                        <li class="card__item"></li>
+                        <li class="card__item"></li>
+                        <li class="card__item"></li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3 class="card__title"></h3>
+                    <ul class="card__list">
+                        <li class="card__item"></li>
+                        <li class="card__item"></li>
+                        <li class="card__item"></li>
+                        <li class="card__item"></li>
+                        <li class="card__item"></li>
+                        <li class="card__item"></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 id="contact" class="section__title">Contacto</h2>
+                <ul>
+                    <li>Linkedn</li>
+                    <li>Github</li>
+                    <li>Email</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__title">Borja Machín Morera &copy; 2021</p>
+        </footer>
+
+        <script src="./assets/scripts/main.js"></script>
+        <!-- do not remove this line! -->
+    </body>
 </html>
