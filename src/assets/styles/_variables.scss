@@ -12,9 +12,19 @@ $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 $background-base: #273037;
 $background-light: #313b44;
 
-$color-white: #ffffff;
 $color-black: #000000;
 $color-aqua: #26f0c7;
 
 $font-family-poppins: "Poppins", sans-serif;
 $font-family-leckerli: "Leckerli One", cursive;
+
+$color-warning: #e0a80d;
+$color-dark: #2d2e2e;
+$color-dark-light: #404242;
+$color-grey: #a4a5a6;
+$color-white: #ffffff;
+$color-dark-opacity: rgba(0, 0, 0, 0.8);
+$color-dark-light-opacity: rgba(0, 0, 0, 0.48);
+// $a: #979899;
+// $b: #3f4040;
+// $c: #323333;

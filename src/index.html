@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="es">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
             rel="stylesheet"
             type="text/css"
@@ -18,210 +18,440 @@
         <title>BMM</title>
     </head>
     <body class="container">
-        <header id="index" class="header">
-            <h1 class="header__title">BMM</h1>
-            <nav class="navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="#index">Inicio</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="#about_me"
-                            >Sobre Mí</a
-                        >
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="#skills"
-                            >Habilidades</a
-                        >
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="#services"
-                            >Servicios</a
-                        >
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="#projects"
-                            >Proyectos</a
-                        >
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="#contact">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
+        <header class="header">
+            <div class="header__img">
+                <img
+                    class="header__image"
+                    src="./assets/images/profile.jpg"
+                    alt="Imagen del trabajador"
+                />
+            </div>
+
+            <h1 class="header__title">Borja Machín Morera</h1>
+            <h2 class="header__subtitle">Ingeniero Informático</h2>
+
+            <ul class="buttons">
+                <li class="buttons__item">
+                    <a
+                        class="buttons__link"
+                        href="https://www.linkedin.com/in/borja-mach%C3%ADn-morera-550062180/"
+                        role="button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="buttons__icon fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="buttons__item">
+                    <a
+                        class="buttons__link"
+                        href="https://github.com/borjamm?tab=repositories"
+                        role="button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="buttons__icon fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="buttons__item">
+                    <a
+                        class="buttons__link"
+                        href="mailto:borjamm@uoc.edu"
+                        role="button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="buttons__icon far fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
         </header>
 
-        <main class="main-container">
-            <section class="section section--flex section--background">
-                <h2 class="section__author">Borja Machín Morera</h2>
-                <p class="section__text">Frontend developer</p>
-            </section>
+        <main class="main">
+            <div class="main__column main__column--mt-10">
+                <section class="resume">
+                    <h3 class="title">Resumen</h3>
+                    <p class="resume__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ullam ea doloribus repudiandae libero asperiores cum
+                        vitae enim reprehenderit in ipsum animi aperiam, aut,
+                        commodi, perferendis fugiat quasi ex repellendus labore
+                        dolore maiores. Labore id, omnis, quae corporis
+                        necessitatibus porro repellendus, et nesciunt ab
+                        recusandae consequatur deserunt cumque quasi itaque
+                        repellat magni quaerat non saepe laudantium. Nemo
+                        molestiae illum exercitationem optio quisquam! Quas
+                        tempora officia voluptates illo deserunt molestiae
+                        reiciendis iste harum dicta.
+                    </p>
+                    <ul class="resume__contact">
+                        <li class="resume__item">
+                            <span class="resume__text">
+                                <i class="resume__icon fas fa-envelope"></i>
+                                Borjamm@uoc.edu
+                            </span>
+                        </li>
 
-            <section class="section">
-                <h2
-                    id="about_me"
-                    class="section__title section__title--primary"
-                >
-                    Sobre mí
-                </h2>
+                        <li class="resume__item resume__item--text-right">
+                            <span class="resume__text">
+                                <i
+                                    class="resume__icon fas fa-map-marker-alt"
+                                ></i>
+                                Lanzarote, Islas Canarias</span
+                            >
+                        </li>
 
-                <div class="section__container">
-                    <!-- <img class="section__img" src="/" alt=""> -->
+                        <li class="resume__item">
+                            <span class="resume__text">
+                                <i class="resume__icon fas fa-phone-alt"></i>
+                                +34 123456789
+                            </span>
+                        </li>
 
-                    <div class="section__img">
-                        <i class="section__icon fas fa-user"></i>
-                    </div>
-
-                    <div class="section__description">
-                        <p class="section__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Sint, eveniet eaque praesentium odio tempora
-                            a, magni facere quas velit quisquam vitae unde,
-                            dicta harum sapiente porro ipsum nemo dolorem ab.
-                        </p>
-
-                        <p class="section__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Quasi distinctio quidem rerum excepturi,
-                            provident reprehenderit quo quis laborum voluptatum
-                            dolores nisi blanditiis eaque culpa. Accusantium
-                            aperiam porro officia saepe quaerat!
-                        </p>
-
-                        <a class="button" href="" role="button">
-                            <span class="button__text">Contacto</span>
-                            <i class="button__icon fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2 id="skills" class="section__title section__title--success">
-                    Habilidades
-                </h2>
-                <div class="section__container">
-                    <div class="card">
-                        <h3 class="card__title"></h3>
-                        <ul class="card__list">
-                            <li class="card__item"></li>
-                            <li class="car__item"></li>
-                            <li class="card__item"></li>
-                            <li class="card__item"></li>
-                            <li class="card__item"></li>
-                            <li class="card__item"></li>
-                        </ul>
-                    </div>
-
-                    <div class="card">
-                        <h3 class="card__title"></h3>
-                        <ul class="card__list">
-                            <li class="card__item"></li>
-                            <li class="car__item"></li>
-                            <li class="card__item"></li>
-                            <li class="card__item"></li>
-                            <li class="card__item"></li>
-                            <li class="card__item"></li>
-                        </ul>
-                    </div>
-
-                    <div class="card">
-                        <h3 class="card__title"></h3>
-                        <ul class="card__list">
-                            <li class="card__item"></li>
-                            <li class="car__item"></li>
-                            <li class="card__item"></li>
-                            <li class="card__item"></li>
-                            <li class="card__item"></li>
-                            <li class="card__item"></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2 id="services" class="section__title">Servicios</h2>
-
-                <ul class="card-service">
-                    <li class="card-service__item">
-                        <!-- <img class="card-service__img" src="" alt=""> -->
-                        <h3 class="card-service__title"></h3>
-                        <p class="card-service__text"></p>
-                    </li>
-
-                    <li class="card-service__item">
-                        <!-- <img class="card-service__img" src="" alt=""> -->
-                        <h3 class="card-service__title"></h3>
-                        <p class="card-service__text"></p>
-                    </li>
-
-                    <li class="card-service__item">
-                        <!-- <img class="card-service__img" src="" alt=""> -->
-                        <h3 class="card-service__title"></h3>
-                        <p class="card-service__text"></p>
-                    </li>
-
-                    <li class="card-service__item">
-                        <!-- <img class="card-service__img" src="" alt=""> -->
-                        <h3 class="card-service__title"></h3>
-                        <p class="card-service__text"></p>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="section">
-                <h2 id="projects" class="section__title">Proyectos</h2>
-
-                <div class="card">
-                    <h3 class="card__title"></h3>
-                    <ul class="card__list">
-                        <li class="card__item"></li>
-                        <li class="card__item"></li>
-                        <li class="card__item"></li>
-                        <li class="card__item"></li>
-                        <li class="card__item"></li>
-                        <li class="card__item"></li>
+                        <li class="resume__item resume__item--text-right">
+                            <span class="resume__text">
+                                <i class="resume__icon fas fa-calendar-day"></i>
+                                1996
+                            </span>
+                        </li>
                     </ul>
-                </div>
+                </section>
 
-                <div class="card">
-                    <h3 class="card__title"></h3>
-                    <ul class="card__list">
-                        <li class="card__item"></li>
-                        <li class="card__item"></li>
-                        <li class="card__item"></li>
-                        <li class="card__item"></li>
-                        <li class="card__item"></li>
-                        <li class="card__item"></li>
+                <section class="section">
+                    <h3 class="title">Estudios</h3>
+                    <ul class="section__list">
+                        <li class="section__item">
+                            <p class="section__date">
+                                <time
+                                    class="section__datetime"
+                                    datetime="2020-09-01"
+                                    >01-09-2020</time
+                                >
+                                - Actualidad
+                            </p>
+                            <p class="section__title">
+                                Máster universitario de desarrollo de
+                                aplicaciones y sitios web
+                            </p>
+                            <p class="section__university">
+                                Universidad Oberta de Catalunya (<abbr
+                                    class="section__abbr"
+                                    title="Universitat Oberta de Catalunya"
+                                    >UOC</abbr
+                                >)
+                            </p>
+                        </li>
+                        <li class="section__item">
+                            <p class="section__date">
+                                <time
+                                    class="section__datetime"
+                                    datetime="2016-09-01"
+                                    >01-09-2016</time
+                                >
+                                -
+                                <time
+                                    class="section__datetime"
+                                    datetime="2020-07-01"
+                                    >01-07-2020</time
+                                >
+                            </p>
+                            <p class="section__title">
+                                Grado en Ingeniería informática
+                            </p>
+
+                            <p class="section__university">
+                                Universidad de las Palmas de Gran Canaria (<abbr
+                                    class="section__abbr"
+                                    title="Universidad de las Palmas de Gran Canaria"
+                                    >ULPGC</abbr
+                                >)
+                            </p>
+                        </li>
                     </ul>
-                </div>
+                </section>
 
-                <div class="card">
-                    <h3 class="card__title"></h3>
-                    <ul class="card__list">
-                        <li class="card__item"></li>
-                        <li class="card__item"></li>
-                        <li class="card__item"></li>
-                        <li class="card__item"></li>
-                        <li class="card__item"></li>
-                        <li class="card__item"></li>
+                <section class="section">
+                    <h3 class="title">Experiencia</h3>
+                    <ul class="section__list">
+                        <li class="section__item">
+                            <p class="section__date">
+                                <time
+                                    class="section__datetime"
+                                    datetime="2019-09-01"
+                                    >01-09-2019</time
+                                >
+                                -
+                                <time
+                                    class="section__datetime"
+                                    datetime="2019-12-04"
+                                    >01-12-2019</time
+                                >
+                            </p>
+                            <p class="section__title">
+                                Contrato de prácticas en Squaads
+                            </p>
+                            <p class="section__description">
+                                Desarrollo de aplicaciones móviles en IONIC
+                            </p>
+                        </li>
                     </ul>
-                </div>
-            </section>
+                </section>
 
-            <section class="section">
-                <h2 id="contact" class="section__title">Contacto</h2>
-                <ul>
-                    <li>Linkedn</li>
-                    <li>Github</li>
-                    <li>Email</li>
-                </ul>
-            </section>
+                <section class="language">
+                    <h3 class="title">Idiomas</h3>
+                    <ul class="language__list">
+                        <li class="language__item">
+                            <i class="language__icon fas fa-language"></i>
+                            <p class="language__text">Español nativo</p>
+                        </li>
+
+                        <li class="language__item">
+                            <i class="language__icon fas fa-language"></i>
+                            <p class="language__text">Inglés Medio (B1)</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="main__column main__colum--margin-0">
+                <section class="skill">
+                    <h3 class="title">Habilidades</h3>
+                    <ul class="skill__list">
+                        <li class="skill__item">
+                            <p class="skill__title">
+                                <span class="skill__percentage">80%</span> HTML
+                            </p>
+                            <div class="skill__bar skill__bar--width-80"></div>
+                        </li>
+
+                        <li class="skill__item">
+                            <p class="skill__title">
+                                <span class="skill__percentage">90%</span> CSS
+                            </p>
+                            <div class="skill__bar skill__bar--width-90"></div>
+                        </li>
+
+                        <li class="skill__item">
+                            <p class="skill__title">
+                                <span class="skill__percentage">95%</span>
+                                JavaScript
+                            </p>
+                            <div class="skill__bar skill__bar--width-95"></div>
+                        </li>
+
+                        <li class="skill__item">
+                            <p class="skill__title">
+                                <span class="skill__percentage">70%</span> PHP
+                            </p>
+                            <div class="skill__bar skill__bar--width-70"></div>
+                        </li>
+
+                        <li class="skill__item">
+                            <p class="skill__title">
+                                <span class="skill__percentage">85%</span>
+                                Angular
+                            </p>
+                            <div class="skill__bar skill__bar--width-85"></div>
+                        </li>
+
+                        <li class="skill__item">
+                            <p class="skill__title">
+                                <span class="skill__percentage">80%</span> Ionic
+                            </p>
+                            <div class="skill__bar skill__bar--width-80"></div>
+                        </li>
+
+                        <li class="skill__item">
+                            <p class="skill__title">
+                                <span class="skill__percentage">90%</span> Git
+                            </p>
+                            <div class="skill__bar skill__bar--width-90"></div>
+                        </li>
+
+                        <li class="skill__item">
+                            <p class="skill__title">
+                                <span class="skill__percentage">75%</span>
+                                Firebase
+                            </p>
+                            <div class="skill__bar skill__bar--width-75"></div>
+                        </li>
+
+                        <li class="skill__item">
+                            <p class="skill__title">
+                                <span class="skill__percentage">80%</span> JSON
+                            </p>
+                            <div class="skill__bar skill__bar--width-70"></div>
+                        </li>
+
+                        <li class="skill__item">
+                            <p class="skill__title">
+                                <span class="skill__percentage">90%</span>
+                                VSCode
+                            </p>
+                            <div class="skill__bar skill__bar--width-90"></div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="project">
+                    <h3 class="title">Proyectos</h3>
+                    <ul class="project__list">
+                        <li class="project__item">
+                            <a
+                                class="project__link"
+                                href="https://accedacris.ulpgc.es/handle/10553/77845"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <article class="project__card">
+                                    <img
+                                        class="project__img"
+                                        src="./assets/images/proyecto_1.jpg"
+                                        alt="Portada de la aplicación móvil"
+                                    />
+                                    <div class="project__text">
+                                        <h4 class="project__title">
+                                            Trabajo final de título
+                                        </h4>
+                                        <p class="project__description">
+                                            Aplicación móvil multiplataforma
+                                            para la gestión de reservas
+                                        </p>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li class="project__item">
+                            <a
+                                class="project__link"
+                                href="https://goofy-varahamihira-6121b2.netlify.app/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <article class="project__card">
+                                    <img
+                                        class="project__img"
+                                        src="./assets/images/proyecto_2.jpg"
+                                        alt="Portada de la web de la editorial"
+                                    />
+                                    <div class="project__text">
+                                        <h4 class="project__title">
+                                            Editorial
+                                        </h4>
+                                        <p class="project__description">
+                                            Práctica de una página web para una
+                                            editorial
+                                        </p>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li class="project__item">
+                            <a
+                                class="project__link"
+                                href="https://borjamm.github.io/PEC3-HTML-CSS/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <article class="project__card">
+                                    <img
+                                        class="project__img"
+                                        src="./assets/images/proyecto_3.jpg"
+                                        alt="Portada de la web del videoclub"
+                                    />
+                                    <div class="project__text">
+                                        <h4 class="project__title">
+                                            Videoclubs
+                                        </h4>
+                                        <p class="project__description">
+                                            Práctica de una página web para un
+                                            videoclubs
+                                        </p>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li class="project__item">
+                            <a
+                                class="project__link"
+                                href="https://borjamm.github.io/RockPaperScissorsGameJS/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <article class="project__card">
+                                    <img
+                                        class="project__img"
+                                        src="./assets/images/proyecto_4.jpg"
+                                        alt="Portada del juego web"
+                                    />
+                                    <div class="project__text">
+                                        <h4 class="project__title">
+                                            Juego web
+                                        </h4>
+                                        <p class="project__description">
+                                            Juego web del piedra papel o tijera
+                                        </p>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li class="project__item project__item--position-right">
+                            <a
+                                class="project__link"
+                                href="https://github.com/borjamm?tab=repositories"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >Ver más</a
+                            >
+                        </li>
+                    </ul>
+                </section>
+            </div>
         </main>
 
         <footer class="footer">
             <p class="footer__title">Borja Machín Morera &copy; 2021</p>
+            <ul class="buttons buttons--position-top">
+                <li class="buttons__item">
+                    <a
+                        class="buttons__link buttons__link--padding-5"
+                        href="https://www.linkedin.com/in/borja-mach%C3%ADn-morera-550062180/"
+                        role="button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i
+                            class="buttons__icon buttons__icon--fz-11 fab fa-linkedin"
+                        ></i>
+                    </a>
+                </li>
+                <li class="buttons__item">
+                    <a
+                        class="buttons__link buttons__link--padding-5"
+                        href="https://github.com/borjamm?tab=repositories"
+                        role="button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i
+                            class="buttons__icon buttons__icon--fz-11 fab fa-github"
+                        ></i>
+                    </a>
+                </li>
+                <li class="buttons__item">
+                    <a
+                        class="buttons__link buttons__link--padding-5"
+                        href="mailto:borjamm@uoc.edu"
+                        role="button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i
+                            class="buttons__icon buttons__icon--fz-11 far fa-envelope"
+                        ></i>
+                    </a>
+                </li>
+            </ul>
         </footer>
 
         <script src="./assets/scripts/main.js"></script>

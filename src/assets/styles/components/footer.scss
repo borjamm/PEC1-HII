@@ -1,10 +1,10 @@
 .footer {
-    padding: 2rem;
-    text-align: center;
-    background-color: $background-light;
-    color: $color-white;
-}
+  padding: 2rem;
+  text-align: center;
+  background-color: $color-dark;
+  color: $color-white;
 
-.footer__title {
-    margin: .5rem 0;
+  .footer__title {
+    margin: 0.5rem 0;
+  }
 }
