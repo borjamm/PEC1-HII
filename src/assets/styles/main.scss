@@ -9,6 +9,10 @@
 
 @import "variables";
 
+@import "mixins";
+@import "./components/header";
+@import "./components/footer";
+
 /**
  * Import npm dependencies
  * see: https://v2.parceljs.org/features/module-resolution/
@@ -25,9 +29,6 @@
  */
 
 @import "layouts/home";
-
-@import "components/header";
-@import "components/footer";
 
 /**
  * Do NOT include anything else in this file!

@@ -1,30 +1,14 @@
 @use "sass:color";
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol";
-$font-family-serif: "Georgia", "Times New Roman", serif;
-
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
-
-$background-base: #273037;
-$background-light: #313b44;
+$font-family-poppins: "Poppins", sans-serif;
+$font-family-leckerli-one: "Leckerli One", cursive;
 
 $color-black: #000000;
-$color-aqua: #26f0c7;
-
-$font-family-poppins: "Poppins", sans-serif;
-$font-family-leckerli: "Leckerli One", cursive;
-
+$color-white: #ffffff;
 $color-warning: #e0a80d;
 $color-dark: #2d2e2e;
-$color-dark-light: #404242;
-$color-grey: #a4a5a6;
-$color-white: #ffffff;
+$color-grey: lighten($color-dark, 50%);
+$color-dark-light: darken($color-grey, 42%);
 $color-dark-opacity: rgba(0, 0, 0, 0.8);
-$color-dark-light-opacity: rgba(0, 0, 0, 0.48);
-// $a: #979899;
-// $b: #3f4040;
-// $c: #323333;
+$color-dark-light-opacity: color.scale($color-black, $lightness: 48%);
+$percentages: 70, 75, 80, 85, 90, 95;
