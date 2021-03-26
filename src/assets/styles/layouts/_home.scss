@@ -83,6 +83,9 @@
         }
       }
 
+      /*------------------------------------*\
+        # BLOQUE DEL RESUMEN
+      \*------------------------------------*/
       .resume {
         .resume__description {
           text-align: justify;
@@ -132,6 +135,9 @@
         }
       }
 
+      /*------------------------------------*\
+        # BLOQUE DE ESTUDIOS Y EXPERIENCIA
+      \*------------------------------------*/
       .section {
         .section__list {
           list-style-type: none;
@@ -178,6 +184,9 @@
         }
       }
 
+      /*------------------------------------*\
+        # BLOQUE DE IDIOMAS
+      \*------------------------------------*/
       .language {
         .language__list {
           list-style-type: none;
@@ -208,6 +217,9 @@
         }
       }
 
+      /*------------------------------------*\
+        # BLOQUE DE HABILIDADES
+      \*------------------------------------*/
       .skill {
         .skill__list {
           list-style-type: none;
@@ -260,6 +272,9 @@
         }
       }
 
+      /*------------------------------------*\
+        # BLOQUE DE PROYECTOS
+      \*------------------------------------*/
       .project {
         .project__list {
           display: flex;
